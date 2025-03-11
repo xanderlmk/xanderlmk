@@ -1,6 +1,6 @@
-## Hi there 👋
-# I'm Alexander Reyes, and I love Minecraft. 
-# If you want to see my website https://xanderlmk.github.io/WebPage/ .That's all. 
+# Hi there 👋
+### I'm Alexander Reyes, and I love Minecraft. 
+### If you want to see my website https://xanderlmk.github.io/WebPage/ .That's all. 
 
 ## My Github stats.
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=xanderlmk)](https://github.com/anuraghazra/github-readme-stats)
