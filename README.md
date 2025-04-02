@@ -5,7 +5,7 @@
 ## My Github stats.
 [![Xander's GitHub stats](https://github-readme-stats-eight-indol-85.vercel.app/api?username=xanderlmk)](https://github.com/anuraghazra/github-readme-stats)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=xanderlmk&layout=compact)
+![Top Langs](https://github-readme-stats-eight-indol-85.vercel.app/api/top-langs/?username=xanderlmk&layout=compact)
 
 <!--
 **xanderlmk/xanderlmk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
