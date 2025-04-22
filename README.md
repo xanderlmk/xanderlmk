@@ -7,12 +7,15 @@
 
 ![Top Langs](https://github-readme-stats-eight-indol-85.vercel.app/api/top-langs/?username=xanderlmk&layout=compact)
 
+### 🔭 I’m currently working on 
+- [CardCrafter](https://github.com/xanderlmk/Flashcards), in the supabase side using PostgreSQL.
+- Xandy-Cloud, a personal cloud-storage application that will be much more than just a cloud-storage &#129323;
+
 <!--
 **xanderlmk/xanderlmk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
