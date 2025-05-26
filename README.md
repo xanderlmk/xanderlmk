@@ -5,7 +5,7 @@
 ## My Github stats.
 [![Xander's GitHub stats](https://github-readme-stats-eight-indol-85.vercel.app/api?username=xanderlmk)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Top Langs](https://github-readme-stats-eight-indol-85.vercel.app/api/top-langs/?username=xanderlmk&layout=compact)(https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats-eight-indol-85.vercel.app/api/top-langs/?username=xanderlmk&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ### 🔭 I’m currently working on 
 - [CardCrafter (Formally Flashcards)](https://github.com/xanderlmk/Flashcards), in the supabase side using PostgreSQL.
