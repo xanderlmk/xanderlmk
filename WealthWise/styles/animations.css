@@ -1,0 +1,44 @@
+/* Floating shapes animation */
+.floating-shape {
+    position: absolute;
+    background: rgba(14, 150, 118, 0.1);
+    width: 50px;
+    height: 50px;
+    animation: float 20s infinite linear;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0.1;
+    }
+    25% { 
+        transform: translate(100vw, 50vh) rotate(90deg);
+        opacity: 0.3;
+    }
+    50% { 
+        transform: translate(50vw, 100vh) rotate(180deg);
+        opacity: 0.1;
+    }
+    75% { 
+        transform: translate(-50vw, 75vh) rotate(270deg);
+        opacity: 0.2;
+    }
+}
+
+/* Grid shape animations */
+.shape {
+    animation: grid-pulse 8s infinite ease-in-out;
+}
+
+@keyframes grid-pulse {
+    0%, 100% { 
+        opacity: 0.05;
+        transform: scale(1);
+    }
+    50% { 
+        opacity: 0.2;
+        transform: scale(1.1);
+    }
+}

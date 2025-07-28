@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthWise</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="geo-grid" id="grid"></div>
+    <div class="motion-path">
+        <div class="floating-shape" style="animation-delay: 0s"></div>
+        <div class="floating-shape" style="animation-delay: -5s"></div>
+        <div class="floating-shape" style="animation-delay: -10s"></div>
+    </div>
+
+    <div class="container py-4">
+        <div class="brand-title">
+            <span style="--i:1">W</span>
+            <span style="--i:2">e</span>
+            <span style="--i:3">a</span>
+            <span style="--i:4">l</span>
+            <span style="--i:5">t</span>
+            <span style="--i:6">h</span>
+            <span style="--i:7">W</span>
+            <span style="--i:8">i</span>
+            <span style="--i:9">s</span>
+            <span style="--i:10">e</span>
+        </div>
+
+        <nav class="navigation-bar">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="index.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-house px-1"></i>Home
+                    </a>
+                </div>
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="about.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-people px-1"></i>About
+                    </a>
+                </div>
+                <div class="col-md-2 col-4">
+                    <a href="download.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-download px-1"></i>Download
+                    </a>
+                </div>
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="bank-statements.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-file-earmark-text px-1"></i>Statements
+                    </a>
+                </div>
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="qa.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-question px-1"></i>Q & A
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="card bg-secondary bg-opacity-25 border-light">
+            <div class="card-body p-5">
+                <h2 class="mb-4 text-center display-4">Download WealthWise</h2>
+                <div class="text-start">
+                    <h4 class="d-flex flex-row justify-content-between">
+                        <a href="https://github.com/xanderlmk/WealthWise/raw/webpage/apks/android/WealthWise.apk" class="btn btn-success">Download for Android</a>
+                        <a href="https://testflight.apple.com/join/pFvAK7Vy" class="btn blue">Download for IOS</a>
+                    </h4>
+                    <h6 class="d-flex justify-content-center text-center"><a href="#ios">Instructions for IOS users, click me</a></h6>
+                    <h5 class="mt-4">How to Enable Unknown Sources on Android</h5>
+                    <section id="android">
+                        <ol class="ps-3">
+                            <li class="mb-3">Open <strong>Settings</strong> on your Android device.<br>
+                                <img src="./images/step_one.png" class="img-thumbnail w-50 mt-2">
+                            </li>
+                            <li class="mb-3">Navigate to <strong>Security</strong> or <strong>Apps &
+                                    notifications</strong>.<br>
+                                <img src="./images/step_two.png" class="img-thumbnail w-50 mt-2">
+                            </li>
+                            <li class="mb-3">Find and tap <strong>Install unknown apps</strong>.<br>
+                                <img src="./images/step_three.png" class="img-thumbnail w-50 mt-2">
+                            </li>
+                            <li class="mb-3">Select the app (e.g., your browser or file manager).<br>
+                                <img src="./images/step_four.png" class="img-thumbnail w-50 mt-2">
+                            </li>
+                            <li class="mb-3">Toggle on <strong>Allow from this source</strong>.<br>
+                                <img src="./images/step_five.png" class="img-thumbnail w-50 mt-2">
+                            </li>
+                        </ol>
+                        <p class="fst-italic fs-4">Adapted from <a
+                                href="https://www.wikihow.com/Allow-Apps-from-Unknown-Sources-on-Android"
+                                target="_blank" class="text-info">WikiHow</a>
+                        </p>
+                    </section>
+                    <h5 class="mt-4">How to install app for IOS</h5>
+                    <section id="ios">
+                        <ol>
+                            <li class="mb-3">First install <strong>TestFlight</strong> on the app store.</li>
+                            <li class="mb-3">The link was provided on the top but 
+                                <a href="https://testflight.apple.com/join/pFvAK7Vy">it is also here</a>.
+                                This will allow to install the IOS application package to test. That's all.
+                            </li>
+                        </ol>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const grid = document.getElementById('grid');
+            for (let i = 0; i < 100; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('grid-dot');
+                dot.style.left = Math.random() * 100 + '%';
+                dot.style.top = Math.random() * 100 + '%';
+                grid.appendChild(dot);
+            }
+
+            const motionToggle = document.getElementById('motionToggle');
+            const motionElements = document.querySelectorAll('.floating-shape');
+            let isPlaying = true;
+
+            motionToggle?.addEventListener('click', function () {
+                isPlaying = !isPlaying;
+                motionElements.forEach(el => {
+                    el.style.animationPlayState = isPlaying ? 'running' : 'paused';
+                });
+                motionToggle.innerHTML = isPlaying ? '<i class="bi bi-pause"></i>' : '<i class="bi bi-play"></i>';
+            });
+        });
+    </script>
+</body>
+
+</html>

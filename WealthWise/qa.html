@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthWise</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/main.js"></script>
+
+<body>
+    <div class="geo-grid" id="grid"></div>
+
+    <div class="motion-path">
+        <div class="floating-shape" style="animation-delay: 0s"></div>
+        <div class="floating-shape" style="animation-delay: -5s"></div>
+        <div class="floating-shape" style="animation-delay: -10s"></div>
+    </div>
+
+    <div class="container py-4">
+        <div class="brand-title">
+            <span style="--i:1">W</span>
+            <span style="--i:2">e</span>
+            <span style="--i:3">a</span>
+            <span style="--i:4">l</span>
+            <span style="--i:5">t</span>
+            <span style="--i:6">h</span>
+            <span style="--i:7">W</span>
+            <span style="--i:8">i</span>
+            <span style="--i:9">s</span>
+            <span style="--i:10">e</span>
+        </div>
+
+        <nav class="navigation-bar">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="index.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-house px-1"></i>Home
+                    </a>
+                </div>
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="about.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-people px-1"></i>About
+                    </a>
+                </div>
+                <div class="col-md-2 col-4">
+                    <a href="download.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-download px-1"></i>Download
+                    </a>
+                </div>
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="bank-statements.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-file-earmark-text px-1"></i>Statements
+                    </a>
+                </div>
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="qa.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-question px-1"></i>Q & A
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-5 text-center">
+                        <h2 class="display-4 mb-4">Welcome to the Q &amp; A</h2>
+                        <p class="lead">
+                        <ul class="text-start">
+                            <li>
+                                <strong>Q1:</strong> Why did you decide to do this project?<br>
+                                <strong>A1:</strong> We wanted to see what real-world finance is like and how we could
+                                apply computer science to it.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q2:</strong> Why didn't you use real banks, and what was your workaround?<br>
+                                <strong>A2:</strong> Real banks were out of scope, too expensive, and involve private
+                                data. So Tyler built a dummy bank instead.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q3:</strong> Who worked on which parts of the project?<br>
+                                <strong>A3:</strong> Tyler handled most of the back-end (and some front-end). Alexander
+                                (not here today) did most of the front-end (and some back-end). Hildur mapped
+                                transactions to categories and designed the poster.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q4:</strong> What technology did you use, and what challenges did you face?<br>
+                                <strong>A4:</strong> For the front-end, we used Expo (React Native with TypeScript). It was tricky—you
+                                really have to “do it the Expo way,” or things break.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q5:</strong> How do you categorize and display user transactions?<br>
+                                <strong>A5:</strong> First each transaction maps to a sub-category (e.g. “McDonald’s →
+                                fast food”), then that maps to a major category (e.g. “fast food → Food”).
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q6:</strong> How does the pie chart interaction work?<br>
+                                <strong>A6:</strong> The pie chart shows only the major categories. Clicking a slice
+                                drills down to list all its individual transactions.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q7:</strong> Which charting library did you use?<br>
+                                <strong>A7:</strong> We used <code>react-native-gifted-charts</code> to render our
+                                charts.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q8:</strong> What if you need to add or change categories later?<br>
+                                <strong>A8:</strong> All mappings live in a simple config file. Updating that file
+                                automatically changes how transactions are grouped in the UI—no code rebuild needed.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q9:</strong> How does the sign up work?<br>
+                                <strong>A9:</strong> We make sure that the user has a real account by using google sign in 
+                                or apple sign in if they have an ios device. 
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q10:</strong> How does the 'forgot password' work?<br>
+                                <strong>A10:</strong> Basically we had to set up an account to send emails. Once we had 
+                                that done, we create an application sign in from the email credentials. That gives us access to 
+                                use the email to send emails to any user who has forgotten their password and need to reset it.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q11:</strong> Do you plan continue working on this project?<br>
+                                <strong>A11:</strong> (Alexander) Yes, I think I'll keep working on this project and try actually using 
+                                real data from my own personal bank statements to generate data and find out the best financial plan for myself.
+                                It'll be an opportunity to extract real-world data and use it to analyze and plan financial plans accordingly.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Q12:</strong> Why have a drawer navigation and a tab bar navigation?<br>
+                                <strong>A12:</strong> The drawer is for things you probably won't go into as much like 
+                                settings and adding goals. The tab is for easy accessibility to navigate to the most important pages.
+                                This includes the main page which gives a detail of the transactions, trends, and uploads for statements.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simple JS for grid and motion toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create grid
+            const grid = document.getElementById('grid');
+            for (let i = 0; i < 100; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('grid-dot');
+                dot.style.left = Math.random() * 100 + '%';
+                dot.style.top = Math.random() * 100 + '%';
+                grid.appendChild(dot);
+            }
+
+            // Motion toggle functionality
+            const motionToggle = document.getElementById('motionToggle');
+            const motionElements = document.querySelectorAll('.floating-shape');
+            let isPlaying = true;
+
+            motionToggle.addEventListener('click', function () {
+                isPlaying = !isPlaying;
+
+                motionElements.forEach(el => {
+                    el.style.animationPlayState = isPlaying ? 'running' : 'paused';
+                });
+
+                // Update icon
+                motionToggle.innerHTML = isPlaying ?
+                    '<i class="bi bi-pause"></i>' :
+                    '<i class="bi bi-play"></i>';
+            });
+        });
+    </script>
+</body>
+
+</html>

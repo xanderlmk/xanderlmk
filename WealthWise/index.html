@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthWise</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/main.js"></script>
+
+<body>
+    <div class="geo-grid" id="grid"></div>
+
+    <div class="motion-path">
+        <div class="floating-shape" style="animation-delay: 0s"></div>
+        <div class="floating-shape" style="animation-delay: -5s"></div>
+        <div class="floating-shape" style="animation-delay: -10s"></div>
+    </div>
+
+    <div class="container py-4">
+        <div class="brand-title">
+            <span style="--i:1">W</span>
+            <span style="--i:2">e</span>
+            <span style="--i:3">a</span>
+            <span style="--i:4">l</span>
+            <span style="--i:5">t</span>
+            <span style="--i:6">h</span>
+            <span style="--i:7">W</span>
+            <span style="--i:8">i</span>
+            <span style="--i:9">s</span>
+            <span style="--i:10">e</span>
+        </div>
+
+        <nav class="navigation-bar">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="index.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-house px-1"></i>Home
+                    </a>
+                </div>
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="about.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-people px-1"></i>About
+                    </a>
+                </div>
+                <div class="col-md-2 col-4">
+                    <a href="download.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-download px-1"></i>Download
+                    </a>
+                </div>
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="bank-statements.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-file-earmark-text px-1"></i>Statements
+                    </a>
+                </div>
+                <div class="col-md-2 col-4 mb-2 mb-md-0">
+                    <a href="qa.html" class="nav-item d-flex justify-content-center">
+                        <i class="bi bi-question px-1"></i>Q & A
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home Page Content -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0">
+                    <div class="d-flex flex-column card-body p-5 text-center">
+                        <h2 class="display-4 mb-4">Welcome to WealthWise</h2>
+                        <p class="lead">
+                            A financial application designed to help you reach your financial goals.
+                        </p>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="m-3">
+                                <a href="mailto:wealthwise@cs.csub.edu?subject=Inquiry&body=Dear%20WealthWise%2C"
+                                    class="btn btn-lg btn-outline-secondary fs-6">Get in Touch</a>
+                            </div>
+                            <div class="m-3">
+                                <a href="./download.html" class="btn btn-lg btn-outline-secondary fs-6">Download the
+                                    App</a>
+                            </div>
+                            <div class="m-3">
+                                <a href="./bank-statements.html" class="btn btn-lg btn-outline-secondary fs-6">Download
+                                    a Bank Statement</a>
+                            </div>
+                        </div>
+                        <h2>Sign in using our test user</h2>
+                        <div class="ratio ratio-16x9">
+                            <iframe 
+                                src="https://youtube.com/embed/ESH_9ieZp2U" title="Tutorial" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h3>Credentials</h3>
+                        <h4>Username: testuser3000</h4>
+                        <h4>Password: testUSER30@</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simple JS for grid and motion toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create grid
+            const grid = document.getElementById('grid');
+            for (let i = 0; i < 100; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('grid-dot');
+                dot.style.left = Math.random() * 100 + '%';
+                dot.style.top = Math.random() * 100 + '%';
+                grid.appendChild(dot);
+            }
+
+            // Motion toggle functionality
+            const motionToggle = document.getElementById('motionToggle');
+            const motionElements = document.querySelectorAll('.floating-shape');
+            let isPlaying = true;
+
+            motionToggle.addEventListener('click', function () {
+                isPlaying = !isPlaying;
+
+                motionElements.forEach(el => {
+                    el.style.animationPlayState = isPlaying ? 'running' : 'paused';
+                });
+
+                // Update icon
+                motionToggle.innerHTML = isPlaying ?
+                    '<i class="bi bi-pause"></i>' :
+                    '<i class="bi bi-play"></i>';
+            });
+        });
+    </script>
+</body>
+
+</html>

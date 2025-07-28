@@ -1,0 +1,352 @@
+/* ===== Main CSS with Bootstrap Integration ===== */
+
+
+:root {
+    --primary-color: #5ce77c;
+    --secondary-color: #3ffb5e;
+    --accent-color: #fd79a8;
+    --dark-color: #2d3436;
+    --light-color: #f8f9fa;
+    --blue-color: #007bff;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-color);
+    position: relative;
+    min-height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+
+.btn.blue {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+.btn.blue:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Background Effects */
+.geo-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.grid-dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+}
+
+.motion-path {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.floating-shape {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    filter: blur(16px);
+    opacity: 0.6;
+    animation: float 15s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(10%, 10%);
+    }
+
+    25% {
+        transform: translate(80%, 30%);
+    }
+
+    50% {
+        transform: translate(60%, 80%);
+    }
+
+    75% {
+        transform: translate(20%, 60%);
+    }
+
+    100% {
+        transform: translate(10%, 10%);
+    }
+}
+
+/* Brand Title Animation */
+.brand-title {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.brand-title span {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    animation: wave 3s infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Navigation Styles */
+.navigation-bar {
+    background-color: var(--dark-color);
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.nav-item.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.tab-icon {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Motion Toggle Button */
+.motion-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Styles */
+.card {
+    flex: auto;
+    border-radius: 15px;
+    overflow: scroll;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #5649c0;
+    border-color: #5649c0;
+}
+
+.btn-outline-secondary {
+    border-color: var(--dark-color);
+    color: var(--dark-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    height: 300px;
+    background-color: var(--secondary-color);
+    opacity: 0.7;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-tag {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Contact Form */
+.contact-section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(108, 92, 231, 0.25);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* About Page */
+.about-content {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .brand-title span {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-title span {
+        font-size: 2rem;
+    }
+
+    .brand-title {
+        padding: 2rem 0;
+    }
+}
+
+/* Our Card background. */
+.card-background {
+    background-color: var(--secondary-color);
+    background-size: auto;
+    opacity: 0.9;
+}
+
+.portrait-video {
+    width: 100%;
+    /* full width of its parent */
+    aspect-ratio: 9 / 16;
+    /* height = width × (16/9) */
+}

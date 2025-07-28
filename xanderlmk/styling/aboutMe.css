@@ -1,0 +1,137 @@
+.my-background {
+    background: url('../images/aboutme.jpg') no-repeat center center fixed;
+    font-family: 'Great Vibes', cursive;
+    background-size: cover; 
+    position: absolute;
+}
+
+.nav-background {
+    background-color: rgba(0, 0, 0, 0.25);
+    /* Semi-transparent black background */
+    color: #e888e8;
+}
+
+.my-nav-offset {
+    margin-left: 10px;
+}
+
+.my-h1-text {
+    font-size: xx-large;
+}
+
+.my-p-text {
+    font-size: large;
+}
+
+.my-hover-text{
+    color: #ba5eba;
+}
+
+.my-hover a:link {
+    color: #ba5eba;
+    text-decoration: none;
+}
+
+.my-hover a:visited {
+    color: #ba5eba;
+}
+
+.my-hover a:focus {
+    color: #d700ff;
+    background-color: grey;
+}
+
+.my-hover a:hover {
+    color: #d700ff;
+    background-color: grey;
+}
+
+.my-hover a:active {
+    color: #ff00dd;
+    background-color: white;
+}
+
+.my-border {
+    border-color: #bd1f1f;
+}
+
+/* Custom borders for different screen sizes */
+@media (min-width: 992px) {
+
+    /* Large screens (lg and up) */
+    .guitar-border-lg {
+        border-right: 2px solid #842029;
+    }
+
+    .minecraft-border-lg {
+        border-left: 2px solid #842029;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Medium screens (md) */
+    .guitar-border-md {
+        border-right: 2px solid #842029;
+        border-bottom: 2px solid #842029;
+    }
+
+    .working-out-border-md {
+        border-bottom: 2px solid #842029;
+
+    }
+
+    .my-background {
+        font-size: medium;
+    }
+
+    .my-h1-text {
+        font-size: x-large;
+    }
+
+    .my-p-text {
+        font-size: small;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    /* Small screens (sm and below) */
+    .guitar-border-sm {
+        border-bottom: 2px solid #842029;
+    }
+
+    .minecraft-border-sm {
+        border-top: 2px solid #842029;
+    }
+
+    .my-background {
+        font-size: x-small;
+        font-weight: bolder;
+        background-size: auto;
+    }
+
+    .my-h1-text {
+        font-size: small;
+        font-weight: bolder;
+    }
+
+    .my-p-text {
+        font-size: xx-small;
+        font-weight: bolder;
+    }
+}
+
+.my-japan-background {
+    background: linear-gradient(to right, #FFB6C1, #FF69B4, #FF1493);
+    /* pink gradient color from left to right */
+}
+
+.social-links a {
+    color: red;
+    padding: 5px;
+}
+
+.my-footer {
+    background-color: rgb(68, 41, 56);
+}
