@@ -8,10 +8,8 @@
 [![Top Langs](https://github-readme-stats-eight-indol-85.vercel.app/api/top-langs/?username=xanderlmk&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ### 🔭 I’m currently working on 
-- [CardCrafter (Formally Flashcards)](https://github.com/xanderlmk/Flashcards), in the supabase side using PostgreSQL.
-- Xandy-Cloud, a personal cloud-storage application that will be much more than just a cloud-storage &#129323;
-- [Assykilla PVP for Minecraft Bedrock](https://github.com/xanderlmk/Assykilla-PVP), using Javascript, a lot of minecraft functions and json for those who
-  love mini-games.
+- [CardCrafter (Formally Flashcards)](https://github.com/xanderlmk/Flashcards), creating the Apple verison (iOS and MacOS) in XCode using Swift :)
+- Xandy-Cloud, a personal remote cloud-storage application that will be much more than just a remote cloud-storage &#129323;
 
 <!--
 **xanderlmk/xanderlmk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
