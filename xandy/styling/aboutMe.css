@@ -1,7 +1,7 @@
 .my-background {
     background: url('../images/aboutme.jpg') no-repeat center center fixed;
     font-family: 'Great Vibes', cursive;
-    background-size: cover; 
+    background-size: cover;
     position: absolute;
 }
 
@@ -23,7 +23,7 @@
     font-size: large;
 }
 
-.my-hover-text{
+.my-hover-text {
     color: #ba5eba;
 }
 
@@ -108,7 +108,8 @@
     .my-background {
         font-size: x-small;
         font-weight: bolder;
-        background-size: auto;
+        background: url('../images/aboutme.jpg') contain no-repeat center center border-box;
+        background-size: 100 auto;
     }
 
     .my-h1-text {
