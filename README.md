@@ -13,7 +13,8 @@
 - [Assykilla PVP for Minecraft Bedrock](https://github.com/xanderlmk/Assykilla-PVP), using Javascript, a lot of minecraft functions and json for those who
   love mini-games.
   
-### 🌱 I’m currently learning Swift to make apple based applicications.
+### 🌱 I’m currently learning
+- Swift to extend my CardCrafter to iOS and macOS users.
 
 <!--
 **xanderlmk/xanderlmk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
