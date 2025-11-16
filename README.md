@@ -8,10 +8,8 @@
 [![Top Langs](https://github-readme-stats-eight-indol-85.vercel.app/api/top-langs/?username=xanderlmk&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ### 🔭 I’m currently working on 
-- [CardCrafter (Formally Flashcards)](https://github.com/xanderlmk/Flashcards), in the supabase side using PostgreSQL.
-- Xandy-Cloud, a personal cloud-storage application that will be much more than just a cloud-storage &#129323;
-- [Assykilla PVP for Minecraft Bedrock](https://github.com/xanderlmk/Assykilla-PVP), using Javascript, a lot of minecraft functions and json for those who
-  love mini-games.
+- Xandy-Lite: An offline media player that will allow users to edit metadata on music and add/create lyrics. 
+Soon it'll also allow for a community to share lyrics. 
   
 ### 🌱 I’m currently learning
 - Swift to extend my CardCrafter to iOS and macOS users.

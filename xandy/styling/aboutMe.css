@@ -11,6 +11,15 @@
     color: #e888e8;
 }
 
+.overflow-nav ul::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow-nav ul {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
 .my-nav-offset {
     margin-left: 10px;
 }
