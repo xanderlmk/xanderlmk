@@ -6,6 +6,7 @@
 [![Xander's GitHub stats](https://github-readme-stats-eight-indol-85.vercel.app/api?username=xanderlmk)](https://github.com/anuraghazra/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats-eight-indol-85.vercel.app/api/top-langs/?username=xanderlmk&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Migrating to Codeberg](https://codeberg.org/xanderlmk)]
 
 ### 🔭 I’m currently working on 
 - Xandy-Lite: An offline media player that will allow users to edit metadata on music and add/create lyrics. 
