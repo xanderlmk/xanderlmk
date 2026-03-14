@@ -1,7 +1,6 @@
 # Hi there 👋
 ### I'm Alexander Reyes, and I love Minecraft. 
 ### If you want to see [my website](https://xanderlmk.github.io/xanderlmk/xandy/index.html) .That's all. 
-#### [Migrating to Codeberg](https://codeberg.org/xanderlmk)
 ## My Github stats.
 [![Xander's GitHub stats](https://github-readme-stats-eight-indol-85.vercel.app/api?username=xanderlmk)](https://github.com/anuraghazra/github-readme-stats)
 
@@ -9,7 +8,9 @@
 
 ### 🔭 I’m currently working on 
 - Xandy-Lite: An offline media player that will allow users to edit metadata on music and add/create lyrics. 
-Soon it'll also allow for a community to share lyrics. 
+Soon it'll also allow for a community to share lyrics.
+- Xandy-Cloud: Online media server player that allows online downloading, updating metadata on music... soon to add lyrics
+- [Migrating to Codeberg](https://codeberg.org/xanderlmk)
   
 ### 🌱 I’m currently learning
 - Swift to extend my CardCrafter to iOS and macOS users.
